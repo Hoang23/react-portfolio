@@ -187,18 +187,18 @@ const ButtonLink1= styled.div`
 
 `;
 
-const ButtonLink2= styled.div`
+// const ButtonLink2= styled.div`
 
-    a {
-        border: 2px solid;
-        border-color: #7CA29C;
-        border-radius: 50px;
-        margin-right: 2rem;
-        font-size: 16px;
-        padding: 0.2rem 28px;
-        cursor: pointer;
-        color: #7CA29C;
-        text-decoration: none;
-    }
+//     a {
+//         border: 2px solid;
+//         border-color: #7CA29C;
+//         border-radius: 50px;
+//         margin-right: 2rem;
+//         font-size: 16px;
+//         padding: 0.2rem 28px;
+//         cursor: pointer;
+//         color: #7CA29C;
+//         text-decoration: none;
+//     }
     
-`;
+// `;
