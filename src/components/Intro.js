@@ -84,19 +84,12 @@ const Container = styled.div`
 
 
 const IntroductionSection = styled.div`
-    width: 100%;
+    /* width: 100%; */
     max-width: 1000px;
     height: calc(100vh - 65px);
-    /* max-height: calc(100vh - 65px); // 65px for navbar */
     /* border: 1px solid red;  */
-    
-
     display: flex; // to put the text and image child containers side by side
-
     margin: 1.2rem; // give space on the sides to even up with nav space
-   
-    
-    // moves the section up when scrolled
     display: flex;
     align-items: center;
     

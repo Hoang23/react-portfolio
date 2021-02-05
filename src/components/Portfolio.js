@@ -103,7 +103,7 @@ const Title = styled.div`
     
 `;
 const Projects = styled.div`
-    /* border: 1px solid red; */   
+    /* border: 1px solid red;    */
     
 `;
 const Project = styled.div`
@@ -112,28 +112,45 @@ const Project = styled.div`
     padding-bottom: 3rem;
 
     @media (max-width: 768px) {
-        display: flex;
+        /* display: flex; */
         /* justify-content: center; */
-        align-items: center;
-        /* flex-wrap: wrap;  */
-        flex-direction: column;
+        /* align-items: center; */
+        /* margin-left: -15%; */
+        flex-wrap: wrap; 
+        /* flex-direction: column; */
     }
 
     
 `;
 const Image = styled.div`
-    max-width: 50%;
+    max-width: 50%; 
     width: 50%;
+    
+    display: flex;
+        
+        
+        align-items: center;
+    
+
+    
 
     img {
         width: 100%;
         min-width: 275px;
         border-radius: 10px;
+        
+        
     }
 
     // on smaller screens let the image always be on top
     @media (max-width: 768px) {
         order: -1;
+
+        // allow image container to cover the screen again once 
+        max-width: 100%; 
+        width: 100%;
+
+        
     }
     
 `;
