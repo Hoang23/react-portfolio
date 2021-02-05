@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #575757;
+  
+}
+
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #F9F9F9;
+  
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  color: #575757
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
