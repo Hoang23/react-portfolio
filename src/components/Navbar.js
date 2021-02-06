@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import {Link as LinkS} from 'react-scroll'
+import Toggledark from '../components/Toggledark'
 
-const Navbar = ({ toggle }) => {
-   
-  
+const Navbar = ({ toggle, theme, toggleTheme}) => {
+
     return (
         <>
             <Nav>
@@ -21,12 +21,12 @@ const Navbar = ({ toggle }) => {
                                 <NavLinks to='about-section' spy={true} smooth={true} offset={-90} duration={500}> About</NavLinks>
                             </NavItem>  
                             <NavItem>
-                            {/* <li><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500} >Test 3</Link></li> */}
                                 <NavLinks to='portfolio-section' spy={true} smooth={true} offset={-90} duration={500}> Portfolio</NavLinks>
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='contact-section' spy={true} smooth={true} offset={200} duration={500}> Contact</NavLinks>
                             </NavItem>
+                            <Toggledark theme={theme} toggleTheme={toggleTheme}/>
                             
                         </LinksWrapper>
                     </Menu>
@@ -38,10 +38,10 @@ const Navbar = ({ toggle }) => {
 
 export default Navbar
 
-const Nav = styled.div`
+const Nav = styled.nav`
     width: 100%;
     height: 65px;
-    background: #FFF;
+    /* background: #FFF; */ // the theme decide
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ const Nav = styled.div`
     box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1); // shadow under nav
 `;
 
-const Container = styled.div`
+const Container = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +84,7 @@ const LogoIcon = styled(LinkS)`
 `;
 
 // only display when desktop mode
-const Menu = styled.div`
+const Menu = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;

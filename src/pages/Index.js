@@ -6,28 +6,44 @@ import About from '../components/About'
 import Portfolio from '../components/Portfolio'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import useDarkMode from '../styles/useDarkMode'
+import { GlobalStyles, lightTheme, darkTheme } from '../styles/globalStyles';
+import { ThemeProvider } from 'styled-components'
+
 
 
 const Home = () => {
+    // Sidebar //
+    // open false by default 
     const [isOpen, setIsOpen] = useState(false)
-
     // function to set state to go back and forth between true/false
     const toggle = () => {
         setIsOpen(!isOpen)
     }
 
+    // Theme //
+    const [theme, toggleTheme] = useDarkMode();
+    const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
+    // jsx
     return (
-        <>
-            <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
-            <Intro/>
-            <About/>
-            <Portfolio />
-            <Contact />
-            <Footer />
-            
+        <>  
+            <ThemeProvider theme={themeMode}>
+            < GlobalStyles />
+                <Sidebar isOpen={isOpen} toggle={toggle} theme={theme} toggleTheme={toggleTheme}/>
+                <Navbar toggle={toggle} theme={theme} toggleTheme={toggleTheme}/>
+                <Intro/>
+                <About/>
+                <Portfolio />
+                <Contact />
+                <Footer />
+            </ThemeProvider>
         </>
     )
 }
 
 export default Home
+
+
+// const Container = styled.div``;
+

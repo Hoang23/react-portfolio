@@ -2,17 +2,17 @@ import React from 'react'
 import styled from "styled-components"
 import {FaTimes} from 'react-icons/fa'
 import {Link as LinkS} from 'react-scroll'
+import Toggledark from './Toggledark'
 
-// import { createStore } from 'react-hooks-global-state';
 
 
-const Sidebar = ({toggle, isOpen }) => {
+const Sidebar = ({toggle, isOpen, theme, toggleTheme }) => {
 
 
     return (
         <>
        
-        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <SidebarContainer isOpen={isOpen} >
                 <Icon onClick={toggle}> 
                     <CloseIcon />
                 </Icon>
@@ -27,8 +27,11 @@ const Sidebar = ({toggle, isOpen }) => {
                         <SidebarLink to='contact-section' spy={true} smooth={true} offset={-90} duration={500} onClick={toggle}>
                             Contact
                         </SidebarLink>
+
+                        <Toggledark theme={theme} toggleTheme={toggleTheme}/>
                     </SidebarMenu>
 
+                    
                         {/* <SideBtnWrap> 
                             <SidebarLogo to='/signin'> Sign In </SidebarLogo>
                         </SideBtnWrap>  */}
@@ -50,7 +53,7 @@ const SidebarContainer = styled.aside`
     z-index: 999; // above everything, no matter where i click the sidebar is going to be clickable
     width: 100%;
     height: 100%;
-    background: white;
+    /* background: white; // let the style decide.. this would overwrite it */
     display: grid;
     align-items:  center;
     top: 0;
@@ -69,6 +72,8 @@ const SidebarContainer = styled.aside`
 const CloseIcon = styled(FaTimes)` // FaTiems = x
     height: 20px;
     width: 20px;
+
+    color: #575757;
     
 `;
 
@@ -83,7 +88,7 @@ const Icon = styled.div`
 `;
 
 const SidebarWrapper = styled.div`
-    color: #000;
+    /* color: #000; */ // let theme decide
 `;
 
 const SidebarMenu = styled.ul`
