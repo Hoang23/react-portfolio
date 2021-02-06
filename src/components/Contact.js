@@ -12,11 +12,10 @@ const Contact = () => {
 
                     <Icons>
                             <a target="_blank" rel="noreferrer" href="https:///github.com/hoang23">
-                            <FaGithub size="32px"/>
+                            <FaGithub fill="black" size="32px"/>
                             </a> 
                     </Icons>
 
-                    
                 </ContactSection>
             </Container>
         </>
