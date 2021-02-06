@@ -12,7 +12,7 @@ const Contact = () => {
 
                     <Icons>
                             <a target="_blank" rel="noreferrer" href="https:///github.com/hoang23">
-                            <FaGithub fill="black" size="32px"/>
+                            <FaGithub fill="#090909" size="32px"/>
                             </a> 
                     </Icons>
 
