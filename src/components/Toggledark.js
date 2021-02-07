@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components';
 
 import { CgSun } from 'react-icons/cg';
 import { HiMoon} from 'react-icons/hi';
@@ -9,16 +8,9 @@ const Toggledark = ({ theme, toggleTheme }) => {
 
     return (
         <darkToggleIcons onClick={toggleTheme}>
-            { theme === 'light' ? <HiMoon fill="#303030" size={18}/>  : <CgSun size={18}/> }
+            { theme === 'light' ? <HiMoon fill="#303030" size={18} style={{ cursor: 'pointer' }}/>  : <CgSun size={18} style={{ cursor: 'pointer' }}/> }
         </darkToggleIcons>
     )
 }
 
 export default Toggledark 
-
-
-const darkToggleIcons = styled.div`
-    border: 2px solid red;
-    
- 
-`;
