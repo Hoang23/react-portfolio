@@ -8,9 +8,9 @@ const About = () => {
                 <Title><p>About</p></Title> 
 
                 <Text>
-                    <p>Hello I'm <span>Hoang</span>, a lifelong learner from <span>Melbourne</span> who loves exploring things that are technical and creative. I have a range of experience within IT and currently have an interest in both frontend and backend. </p> <br/>
+                    <p>Hello I'm <span>Hoang</span>, a lifelong learner from <span>Melbourne</span> who loves exploring technical and creative endeavours. I have a range of experience within IT and currently have an interest in both frontend and backend development. </p> <br/>
 
-                    <p>Right now, I am learning React so that I can create complex web applications. This website itself is built with React and is currently undergoing continuos change. A feature I am looking to implement is a toggle to switch between light and dark mode. </p> <br/>
+                    <p>This website itself is built with React and is currently undergoing continuos change. A feature I am looking to implement is a toggle to switch between light and dark mode. </p> <br/>
 
                     <p>You can find out more about me, my experience and skills on my <a href="http://hoangh.netlify.com">blog</a> as I share random things that I'm interested in.</p>
                 </Text>

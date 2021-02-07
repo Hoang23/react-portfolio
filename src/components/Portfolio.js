@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import project3 from '../assets/keyboardUI.PNG'
 import project2 from '../assets/blog-projects.png'
 import project1 from '../assets/studios.PNG'
+import project4 from '../assets/ChooseOne.png'
 
 const Portfolio = () => {
     return (
@@ -15,7 +16,7 @@ const Portfolio = () => {
                         <Project>
                             <Image> <img src={project3} alt=""/></Image>
                             <Summary>
-                                <h6>UI Designs</h6> <br/>
+                                <h6>Website Prototype & Wireframe Design</h6> <br/>
                                 <p>Figma</p>
 
                                 <MainButtons>
@@ -57,7 +58,22 @@ const Portfolio = () => {
                                     </ButtonLink1>
                                 </MainButtons>
                             </Summary>
-                        </Project>
+                        </Project> <br/>
+
+                        <Project>
+                            <Summary>
+                                <h6>Choose One - Randomizer</h6> <br/>
+                               
+                                <p>React - Javascript</p>
+                                <MainButtons>
+                                    <ButtonLink1>
+                                        <a target="_blank" rel="noreferrer" href="https://chooseone.netlify.app">Visit</a> 
+                                    </ButtonLink1>
+                                </MainButtons>
+                                
+                            </Summary>
+                            <Image> <img src={project4 } alt=""/></Image>
+                        </Project> <br/>
 
                     </Projects>
                 </PortfolioSection>
