@@ -19,7 +19,7 @@ const Intro = () => {
                         
                         <WhatText >
                             <p>Developer</p>
-                            <p>Designer</p>
+                            <p>Forever Student</p>
                         </WhatText>
                         <MainButtons>
                             <ButtonLink1 to='about-section' spy={true} smooth={true} offset={-90} duration={500}> About </ButtonLink1>
