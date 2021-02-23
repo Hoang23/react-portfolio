@@ -10,7 +10,7 @@ const Navbar = ({ toggle, theme, toggleTheme}) => {
         <>
             <Nav>
                 <Container>       
-                    <LogoIcon to='introduction-section' spy={true} smooth={true} offset={-90} duration={500}> Hoang.dev </LogoIcon>
+                    <LogoIcon to='introduction-section' spy={true} smooth={true} offset={-90} duration={500}> Hoang<span>HH</span> </LogoIcon>
                     <HamburgerIcon onClick={toggle}> 
                         <FaBars />
                     </HamburgerIcon>
@@ -79,8 +79,12 @@ const LogoIcon = styled(LinkS)`
 
     font-weight: 600;
     font-size: 20;
-    color: #A58D94;
+    color: #7CA29C;
     cursor: pointer;
+
+    span {
+        color: #A58D94;
+    }
 `;
 
 // only display when desktop mode
