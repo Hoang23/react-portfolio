@@ -106,8 +106,6 @@ const Portfolio = () => {
                             </Summary>
                         </Project> <br/>
 
-                    
-
                     </Projects>
                 </PortfolioSection>
             </Container>
