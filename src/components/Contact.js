@@ -47,9 +47,10 @@ const Title = styled.div`
     }
 `;
 
-const Email = styled.div`
+const Email = styled.p`
     font-weight: 500;
     font-size: 20px;
+    font-family: "";
 `;
 
 const Icons = styled.div`

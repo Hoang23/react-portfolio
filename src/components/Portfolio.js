@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import project3 from '../assets/keyboardUI.PNG'
 import project2 from '../assets/blog-projects.png'
 import project1 from '../assets/studios.PNG'
-import project4 from '../assets/ChooseOne.png'
+import project4 from '../assets/chooseOne.PNG'
+import project5 from '../assets/RealNews.PNG'
+import project6 from '../assets/gtd.PNG'
 
 const Portfolio = () => {
     return (
@@ -12,6 +14,21 @@ const Portfolio = () => {
                 <PortfolioSection id="portfolio-section">
                     <Title><p>Portfolio</p></Title> 
                     <Projects >
+
+                    <Project>
+                            <Summary>
+                                <h6>Get Things Done</h6> <br/>
+                               
+                                <p>React - HTML/CSS - Javascript - Chakra UI</p>
+                                <MainButtons>
+                                    <ButtonLink1>
+                                        <a target="_blank" rel="noreferrer" href="https://tasksdone.netlify.app">Visit</a> 
+                                    </ButtonLink1>
+                                </MainButtons>
+                                
+                            </Summary>
+                            <Image> <img src={project6 } alt=""/></Image>
+                        </Project> <br/>
 
                         <Project>
                             <Image> <img src={project3} alt=""/></Image>
@@ -64,7 +81,7 @@ const Portfolio = () => {
                             <Summary>
                                 <h6>Choose One - Randomizer</h6> <br/>
                                
-                                <p>React - Javascript</p>
+                                <p>React - HTML/CSS - Javascript</p>
                                 <MainButtons>
                                     <ButtonLink1>
                                         <a target="_blank" rel="noreferrer" href="https://chooseone.netlify.app">Visit</a> 
@@ -74,6 +91,22 @@ const Portfolio = () => {
                             </Summary>
                             <Image> <img src={project4 } alt=""/></Image>
                         </Project> <br/>
+
+                        <Project>
+                            <Image> <img src={ project5} alt=""/></Image>
+                            <Summary>
+                                <h6>True Story</h6> <br/>
+                                <p>React - Reddit API - HTML/CSS - JavaScript - Styled-Components</p>
+
+                                <MainButtons>
+                                    <ButtonLink1 >
+                                        <a target="_blank" rel="noreferrer" href="https://true-story.netlify.app/">Visit</a> 
+                                    </ButtonLink1>
+                                </MainButtons>
+                            </Summary>
+                        </Project> <br/>
+
+                    
 
                     </Projects>
                 </PortfolioSection>
