@@ -1,12 +1,15 @@
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Home from './pages/Index';
+import './react-transitions.css';
 
 function App() {
   return (
-      <Router>
-        <Home />
-      </Router>
+      <div className="react-transition slide-up" style={{animationDuration: '3s'}}>
+        <Router>
+          <Home />
+        </Router>
+      </div>
   );
 }
 

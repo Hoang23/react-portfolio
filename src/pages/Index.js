@@ -32,11 +32,13 @@ const Home = () => {
             < GlobalStyles />
                 <Sidebar isOpen={isOpen} toggle={toggle} theme={theme} toggleTheme={toggleTheme}/>
                 <Navbar toggle={toggle} theme={theme} toggleTheme={toggleTheme}/>
-                <Intro/>
-                <About/>
-                <Portfolio />
-                <Contact />
-                <Footer />
+                <div className="react-transition swipe-up" style={{animationDuration: '1.5s'}}>
+                    <Intro/>
+                    <About/>
+                    <Portfolio />
+                    <Contact />
+                    <Footer />
+                </div>
             </ThemeProvider>
         </>
     )
