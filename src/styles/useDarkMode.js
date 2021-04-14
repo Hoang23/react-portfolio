@@ -1,26 +1,23 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 
 export const useDarkMode = () => {
-    
-    const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState("light");
 
-    const setMode = mode => {
-        window.localStorage.setItem('theme', mode);
-        setTheme(mode);
-    }
+  const setMode = (mode) => {
+    window.localStorage.setItem("theme", mode);
+    setTheme(mode);
+  };
 
-    const toggleTheme = () => {
-        theme === 'dark' ? setMode('light') : setMode('dark');
-    }
-    
-    useEffect( () =>{
-        const localTheme = window.localStorage.getItem('theme');
-        localTheme ? setTheme(localTheme) : setMode('light');
-    }, []);
+  const toggleTheme = () => {
+    theme === "dark" ? setMode("light") : setMode("dark");
+  };
 
-    
-    
-    return [ theme, toggleTheme ] // return array of instead of normally jsx UI
-}
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme");
+    localTheme ? setTheme(localTheme) : setMode("light");
+  }, []);
 
-export default useDarkMode
+  return [theme, toggleTheme]; // return array of instead of normally jsx UI
+};
+
+export default useDarkMode;
