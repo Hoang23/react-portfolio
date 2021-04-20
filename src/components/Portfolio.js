@@ -5,7 +5,7 @@ import project2 from "../assets/blog-projects.png";
 import project1 from "../assets/studios.PNG";
 import project4 from "../assets/chooseOne.PNG";
 import project5 from "../assets/RealNews.PNG";
-import project6 from "../assets/gtd.PNG";
+import project6 from "../assets/NoteTaking.PNG";
 
 const Portfolio = () => {
   return (
@@ -18,14 +18,14 @@ const Portfolio = () => {
           <Projects>
             <Project>
               <Summary>
-                <h6>Get Things Done</h6> <br />
-                <p>React - HTML/CSS - Javascript - Chakra UI</p>
+                <h6>Notes App</h6> <br />
+                <p>React - HTML/CSS - Javascript - Material UI - Jest</p>
                 <MainButtons>
                   <ButtonLink1>
                     <a
                       target='_blank'
                       rel='noreferrer'
-                      href='https://tasksdone.netlify.app'
+                      href='https://ikanotes.netlify.app'
                     >
                       Visit
                     </a>
