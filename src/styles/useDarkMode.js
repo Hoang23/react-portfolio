@@ -14,7 +14,7 @@ export const useDarkMode = () => {
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme");
-    localTheme ? setTheme(localTheme) : setMode("dark");
+    localTheme ? setTheme(localTheme) : setMode("light");
   }, []);
 
   return [theme, toggleTheme]; // return array of instead of normally jsx UI

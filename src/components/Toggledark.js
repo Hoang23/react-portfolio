@@ -7,13 +7,13 @@ const Toggledark = ({ theme, toggleTheme }) => {
   console.log(theme);
 
   return (
-    <darkToggleIcons onClick={toggleTheme}>
+    <div onClick={toggleTheme}>
       {theme === "light" ? (
         <HiMoon fill='#303030' size={18} style={{ cursor: "pointer" }} />
       ) : (
         <CgSun size={18} style={{ cursor: "pointer" }} />
       )}
-    </darkToggleIcons>
+    </div>
   );
 };
 

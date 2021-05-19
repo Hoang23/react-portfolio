@@ -66,7 +66,7 @@ const Intro = () => {
             x: [-250, 100, 250, -100, 220, -150, -300],
             rotate: 180,
           }}
-          transition={{ yoyo: Infinity, duration: 30 }}
+          transition={{ repeat: Infinity, duration: 30 }}
         >
           <img src={blob} alt='' />
         </motion.div>
@@ -179,6 +179,10 @@ const ButtonLink2 = styled.div`
 `;
 
 const Blob = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+
   width: 550px;
   position: absolute;
   top: 90%;
