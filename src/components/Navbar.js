@@ -15,7 +15,7 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
             spy={true}
             smooth={true}
             offset={-90}
-            duration={500}
+            duration={1000}
           >
             Hoang <img src={blob} alt='test' />
             <span>HH</span>{" "}
@@ -32,7 +32,7 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
                   spy={true}
                   smooth={true}
                   offset={-90}
-                  duration={500}
+                  duration={1000}
                 >
                   {" "}
                   About
@@ -44,7 +44,7 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
                   spy={true}
                   smooth={true}
                   offset={-90}
-                  duration={500}
+                  duration={1000}
                 >
                   {" "}
                   Portfolio
@@ -56,7 +56,7 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
                   spy={true}
                   smooth={true}
                   offset={200}
-                  duration={500}
+                  duration={1000}
                 >
                   {" "}
                   Contact
