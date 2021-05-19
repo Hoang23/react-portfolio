@@ -3,7 +3,7 @@ import styled from "styled-components";
 import project3 from "../assets/keyboardUI.PNG";
 import project2 from "../assets/blog-projects.png";
 import project1 from "../assets/studios.PNG";
-import project4 from "../assets/chooseOne.PNG";
+// import project4 from "../assets/chooseOne.PNG";
 import project5 from "../assets/RealNews.PNG";
 import project6 from "../assets/NoteTaking.PNG";
 
