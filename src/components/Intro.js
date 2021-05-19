@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Tilt from "react-tilt";
 import image from "../assets/code_thinking.svg";
 import { Link as LinkS } from "react-scroll";
+import { motion } from "framer-motion";
+import blob from "../assets/blob_5-3-5.svg";
 
 const Intro = () => {
   return (
@@ -45,12 +47,30 @@ const Intro = () => {
           </Text>
 
           <Right>
-            <TiltWrapper options={{ max: 25 }}>
-              <img src={image} alt='' />
-            </TiltWrapper>
+            <motion.div
+              animate={{ y: [-200, 80, -30, 0] }}
+              transition={{ delay: 0.3, duration: 1.2 }}
+            >
+              <TiltWrapper options={{ max: 25 }}>
+                <img src={image} alt='' />
+              </TiltWrapper>
+            </motion.div>
           </Right>
         </IntroductionSection>
       </Container>
+
+      <Blob>
+        <motion.div
+          animate={{
+            y: [0, -100, 50, -30, 20, 90, -40],
+            x: [-250, 100, 250, -100, 220, -150, -300],
+            rotate: 180,
+          }}
+          transition={{ yoyo: Infinity, duration: 30 }}
+        >
+          <img src={blob} alt='' />
+        </motion.div>
+      </Blob>
     </>
   );
 };
@@ -156,4 +176,12 @@ const ButtonLink2 = styled.div`
     padding: 0.2rem 28px;
     cursor: pointer;
   }
+`;
+
+const Blob = styled.div`
+  width: 550px;
+  position: absolute;
+  top: 90%;
+  z-index: -99;
+  opacity: 0.8;
 `;

@@ -104,7 +104,7 @@ const Portfolio = () => {
               </Summary>
             </Project>{" "}
             <br />
-            <Project>
+            {/* <Project>
               <Summary>
                 <h6>Choose One - Randomizer</h6> <br />
                 <p>React - HTML/CSS - Javascript</p>
@@ -125,12 +125,8 @@ const Portfolio = () => {
                 <img src={project4} alt='' />
               </Image>
             </Project>{" "}
-            <br />
+            <br /> */}
             <Project>
-              <Image>
-                {" "}
-                <img src={project5} alt='' />
-              </Image>
               <Summary>
                 <h6>True Story</h6> <br />
                 <p>
@@ -148,6 +144,10 @@ const Portfolio = () => {
                   </ButtonLink1>
                 </MainButtons>
               </Summary>
+              <Image>
+                {" "}
+                <img src={project5} alt='' />
+              </Image>
             </Project>{" "}
             <br />
           </Projects>
