@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
-const Contact = () => {
+const Contact = ({ theme }) => {
   return (
     <>
       <Container>
@@ -18,7 +18,11 @@ const Contact = () => {
               rel='noreferrer'
               href='https:///github.com/hoang23'
             >
-              <FaGithub fill='#090909' size='32px' />
+              {theme === "light" ? (
+                <FaGithub fill='#090909' size='32px' />
+              ) : (
+                <FaGithub fill='white' size='32px' />
+              )}
             </a>
           </Icons>
         </ContactSection>

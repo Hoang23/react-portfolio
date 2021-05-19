@@ -48,7 +48,7 @@ const Home = () => {
           <Intro />
           <About />
           <Portfolio />
-          <Contact />
+          <Contact theme={theme} />
           <Footer />
         </motion.div>
         {/* </div> */}
