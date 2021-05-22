@@ -34,10 +34,6 @@ const Home = () => {
           toggleTheme={toggleTheme}
         />
         <Navbar toggle={toggle} theme={theme} toggleTheme={toggleTheme} />
-        {/* <div
-          className='react-transition swipe-up'
-          style={{ animationDuration: "1.5s" }}
-        > */}
 
         <motion.div
           layout
@@ -51,7 +47,6 @@ const Home = () => {
           <Contact theme={theme} />
           <Footer />
         </motion.div>
-        {/* </div> */}
       </ThemeProvider>
     </>
   );

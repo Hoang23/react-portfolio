@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
 import Toggledark from "../components/Toggledark";
-import blob from "../assets/blob_5-3-5.svg";
 
 const Navbar = ({ toggle, theme, toggleTheme }) => {
   return (
@@ -17,8 +16,8 @@ const Navbar = ({ toggle, theme, toggleTheme }) => {
             offset={-90}
             duration={1000}
           >
-            Hoang <img src={blob} alt='test' />
-            <span>HH</span>{" "}
+            Hoang
+            <span>HH</span>
           </LogoIcon>
           <HamburgerIcon onClick={toggle}>
             <FaBars />

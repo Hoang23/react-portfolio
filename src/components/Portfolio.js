@@ -1,4 +1,5 @@
 import React from "react";
+
 import styled from "styled-components";
 import project3 from "../assets/keyboardUI.PNG";
 import project2 from "../assets/blog-projects.png";
@@ -6,6 +7,7 @@ import project1 from "../assets/studios.PNG";
 // import project4 from "../assets/chooseOne.PNG";
 import project5 from "../assets/RealNews.PNG";
 import project6 from "../assets/NoteTaking.PNG";
+import PortfolioProject from "./PortfolioProject";
 
 const Portfolio = () => {
   return (
@@ -16,140 +18,41 @@ const Portfolio = () => {
             <p>Portfolio</p>
           </Title>
           <Projects>
-            <Project>
-              <Summary>
-                <h6>Notes App</h6> <br />
-                <p>React - HTML/CSS - Javascript - Material UI - Jest</p>
-                <MainButtons>
-                  <ButtonLink1>
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://ikanotes.netlify.app'
-                    >
-                      Visit
-                    </a>
-                  </ButtonLink1>
-                </MainButtons>
-              </Summary>
-              <Image>
-                {" "}
-                <img src={project6} alt='' />
-              </Image>
-            </Project>{" "}
-            <br />
-            <Project>
-              <Image>
-                {" "}
-                <img src={project3} alt='' />
-              </Image>
-              <Summary>
-                <h6>Website Prototype & Wireframe Design</h6> <br />
-                <p>Figma</p>
-                <MainButtons>
-                  <ButtonLink1>
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://drive.google.com/file/d/1HDPsA9Nfv02oPVOEX0lODsMsmOG4iJzD/view?usp=sharing'
-                    >
-                      Visit
-                    </a>
-                  </ButtonLink1>
-                </MainButtons>
-              </Summary>
-            </Project>
-            <br />
-            <Project>
-              <Summary>
-                <h6>Blog</h6> <br />
-                <p>Hugo - Markdown</p>
-                <MainButtons>
-                  <ButtonLink1>
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://hoangh.com'
-                    >
-                      Visit
-                    </a>
-                  </ButtonLink1>
-                </MainButtons>
-              </Summary>
-              <Image>
-                {" "}
-                <img src={project2} alt='' />
-              </Image>
-            </Project>{" "}
-            <br />
-            <Project>
-              <Image>
-                {" "}
-                <img src={project1} alt='' />
-              </Image>
-              <Summary>
-                <h6>Imperium Studios</h6> <br />
-                <p>Wordpress (Elementor, Themes, Plugins) - HTML - CSS</p>
-                <MainButtons>
-                  <ButtonLink1>
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://imperiumgg.com'
-                    >
-                      Visit
-                    </a>
-                  </ButtonLink1>
-                </MainButtons>
-              </Summary>
-            </Project>{" "}
-            <br />
-            {/* <Project>
-              <Summary>
-                <h6>Choose One - Randomizer</h6> <br />
-                <p>React - HTML/CSS - Javascript</p>
-                <MainButtons>
-                  <ButtonLink1>
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://chooseone.netlify.app'
-                    >
-                      Visit
-                    </a>
-                  </ButtonLink1>
-                </MainButtons>
-              </Summary>
-              <Image>
-                {" "}
-                <img src={project4} alt='' />
-              </Image>
-            </Project>{" "}
-            <br /> */}
-            <Project>
-              <Summary>
-                <h6>True Story</h6> <br />
-                <p>
-                  React - Reddit API - HTML/CSS - JavaScript - Styled-Components
-                </p>
-                <MainButtons>
-                  <ButtonLink1>
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://true-story.netlify.app/'
-                    >
-                      Visit
-                    </a>
-                  </ButtonLink1>
-                </MainButtons>
-              </Summary>
-              <Image>
-                {" "}
-                <img src={project5} alt='' />
-              </Image>
-            </Project>{" "}
-            <br />
+            <PortfolioProject
+              Title='Notes App'
+              Description='React - HTML/CSS - Javascript - Material UI - Jest'
+              Link='https://ikanotes.netlify.app'
+              Image={project6}
+              LeftRight={true}
+            />
+            <PortfolioProject
+              Title='Website Prototype & Wireframe Design'
+              Description='Figma'
+              Link='https://drive.google.com/file/d/1HDPsA9Nfv02oPVOEX0lODsMsmOG4iJzD/view?usp=sharing'
+              Image={project3}
+              LeftRight={false}
+            />
+            <PortfolioProject
+              Title='Blog'
+              Description='Hugo - Markdown'
+              Link='https://hoangh.netlify.app/'
+              Image={project2}
+              LeftRight={true}
+            />
+            <PortfolioProject
+              Title='Imperium Studios'
+              Description='Wordpress (Elementor, Themes, Plugins) - HTML - CSS'
+              Link='https://imperiumgg.com'
+              Image={project1}
+              LeftRight={false}
+            />
+            <PortfolioProject
+              Title='True Story'
+              Description='React - Reddit API - HTML/CSS - JavaScript - Styled-Components'
+              Link='https://true-story.netlify.app/'
+              Image={project5}
+              LeftRight={true}
+            />
           </Projects>
         </PortfolioSection>
       </Container>
@@ -183,70 +86,3 @@ const Title = styled.div`
   }
 `;
 const Projects = styled.div``;
-const Project = styled.div`
-  display: flex;
-  padding-bottom: 3rem;
-
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-  }
-`;
-const Image = styled.div`
-  max-width: 50%;
-  width: 50%;
-
-  display: flex;
-
-  align-items: center;
-
-  img {
-    width: 100%;
-    min-width: 275px;
-    border-radius: 10px;
-  }
-
-  // on smaller screens let the image always be on top
-  @media (max-width: 768px) {
-    order: -1;
-
-    // allow image container to cover the screen again once
-    max-width: 100%;
-    width: 100%;
-  }
-`;
-const Summary = styled.div`
-  width: 50%;
-  margin-left: 2.2rem;
-  margin-right: 2.2rem;
-  margin-top: 5%;
-
-  h6 {
-    font-size: 20px;
-    color: #7ca29c;
-    border-bottom: 2px solid #a58d94;
-    border-bottom-width: 5px;
-  }
-`;
-
-const MainButtons = styled.div`
-  margin-top: 15%;
-  display: flex;
-`;
-
-const ButtonLink1 = styled.div`
-  a {
-    color: white;
-    text-decoration: none; // remove underline from anchor tag
-    border: 2px solid;
-    border-color: #7ca29c;
-    background: #7ca29c;
-
-    border-radius: 50px;
-    margin-right: 2rem;
-    font-size: 16px;
-
-    padding: 0.2rem 28px;
-
-    cursor: pointer;
-  }
-`;

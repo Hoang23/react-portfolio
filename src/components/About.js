@@ -13,14 +13,8 @@ const About = () => {
             <p>
               Hello I'm <span>Hoang</span>, a lifelong learner from{" "}
               <span>Melbourne</span> who loves exploring technical and creative
-              endeavours. I have a range of experience within IT and currently
-              have an interest in both frontend and backend development.{" "}
-            </p>{" "}
-            <br />
-            <p>
-              This website itself is built with React and is currently
-              undergoing continuos change. A feature I am looking to implement
-              is a toggle to switch between light and dark mode.{" "}
+              endeavours. This webpage is built with React and is mainly
+              dedicated to frontend development.
             </p>{" "}
             <br />
             <p>

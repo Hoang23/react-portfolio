@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Tilt from "react-tilt";
 import image from "../assets/code_thinking.svg";
 import { Link as LinkS } from "react-scroll";
 import { motion } from "framer-motion";
@@ -21,7 +20,6 @@ const Intro = () => {
 
             <WhatText>
               <p>Developer</p>
-              <p>Forever Student</p>
             </WhatText>
             <MainButtons>
               <ButtonLink1
@@ -51,7 +49,7 @@ const Intro = () => {
               animate={{ y: [-200, 80, -30, 0] }}
               transition={{ delay: 0.3, duration: 1.2 }}
             >
-              <TiltWrapper options={{ max: 25 }}>
+              <TiltWrapper>
                 <img src={image} alt='' />
               </TiltWrapper>
             </motion.div>
@@ -62,8 +60,8 @@ const Intro = () => {
       <Blob>
         <motion.div
           animate={{
-            y: [0, -100, 50, -30, 20, 90, -40],
-            x: [-250, 100, 250, -100, 220, -150, -300],
+            y: [0, -100, 50, -30, 20, 90, -40, 0],
+            x: [-250, 100, 250, -100, 220, -150, -300, -250],
             rotate: 180,
           }}
           transition={{ repeat: Infinity, duration: 30 }}
@@ -82,7 +80,7 @@ const Right = styled.div`
   margin-top: -17%;
 `;
 
-const TiltWrapper = styled(Tilt)`
+const TiltWrapper = styled.div`
   @media (max-width: 768px) {
     display: none;
   }
