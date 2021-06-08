@@ -7,6 +7,7 @@ import project1 from "../assets/studios.PNG";
 // import project4 from "../assets/chooseOne.PNG";
 import project5 from "../assets/RealNews.PNG";
 import project6 from "../assets/NoteTaking.PNG";
+import project7 from "../assets/signInLanding.PNG";
 import PortfolioProject from "./PortfolioProject";
 
 const Portfolio = () => {
@@ -19,12 +20,20 @@ const Portfolio = () => {
           </Title>
           <Projects>
             <PortfolioProject
+              Title='Task Box - Signin Landing'
+              Description='HTML/CSS - Framer-motion'
+              Link='https://tasksbox.netlify.app/'
+              Image={project7}
+              LeftRight={false}
+            />
+            <PortfolioProject
               Title='Notes App'
               Description='React - HTML/CSS - Javascript - Material UI - Jest'
               Link='https://ikanotes.netlify.app'
               Image={project6}
               LeftRight={true}
             />
+
             <PortfolioProject
               Title='Website Prototype & Wireframe Design'
               Description='Figma'
