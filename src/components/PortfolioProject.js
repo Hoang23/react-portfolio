@@ -95,11 +95,12 @@ const Project = styled.div`
   align-items: flex-start;
   height: 100%;
   padding-bottom: 3rem;
-  /* border: 1px solid red; */
+
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }
+
 `;
 const Image = styled.div`
   max-width: 50%;
@@ -145,6 +146,7 @@ const Summary = styled.div`
 
   @media (max-width: 768px) {
     justify-content: flex-start;
+    width: 100%;
   }
 `;
 
