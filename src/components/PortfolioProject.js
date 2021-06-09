@@ -16,7 +16,7 @@ const PortfolioProject = (props) => {
   }, [controls, inView]);
 
   return (
-    <div>
+    <>
       {props.LeftRight === true ? (
         <motion.div
           ref={ref}
@@ -30,8 +30,11 @@ const PortfolioProject = (props) => {
         >
           <Project>
             <Summary>
-              <h6>{props.Title}</h6> <br />
-              <p>{props.Description}</p>
+              <TitleDescriptionContainer>
+                <h6>{props.Title}</h6> <br />
+                <p>{props.Description}</p>
+              </TitleDescriptionContainer>
+
               <MainButtons>
                 <ButtonLink1>
                   <a target='_blank' rel='noreferrer' href={props.Link}>
@@ -65,8 +68,11 @@ const PortfolioProject = (props) => {
               <img src={props.Image} alt='' />
             </Image>
             <Summary>
-              <h6>{props.Title}</h6> <br />
-              <p>{props.Description}</p>
+              <TitleDescriptionContainer>
+                <h6>{props.Title}</h6> <br />
+                <p>{props.Description}</p>
+              </TitleDescriptionContainer>
+
               <MainButtons>
                 <ButtonLink1>
                   <a target='_blank' rel='noreferrer' href={props.Link}>
@@ -78,7 +84,7 @@ const PortfolioProject = (props) => {
           </Project>
         </motion.div>
       )}
-    </div>
+    </>
   );
 };
 
@@ -86,7 +92,10 @@ export default PortfolioProject;
 
 const Project = styled.div`
   display: flex;
+  align-items: flex-start;
+  height: 100%;
   padding-bottom: 3rem;
+  /* border: 1px solid red; */
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
@@ -100,6 +109,7 @@ const Image = styled.div`
 
   align-items: center;
 
+  /* border: 1px solid green; */
   img {
     width: 100%;
     min-width: 275px;
@@ -116,22 +126,37 @@ const Image = styled.div`
   }
 `;
 const Summary = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
+  height: 200px;
   margin-left: 2.2rem;
   margin-right: 2.2rem;
-  margin-top: 5%;
+  /* border: 1px solid blue; */
 
   h6 {
     font-size: 20px;
     color: #7ca29c;
     border-bottom: 2px solid #a58d94;
     border-bottom-width: 5px;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
+`;
+
+const TitleDescriptionContainer = styled.div`
+  p {
+    margin-bottom: 1rem;
   }
 `;
 
 const MainButtons = styled.div`
-  margin-top: 15%;
-  display: flex;
+  /* margin-top: 1rem; */
+  /* display: flex; */
 `;
 
 const ButtonLink1 = styled.div`

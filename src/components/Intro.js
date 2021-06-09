@@ -20,6 +20,7 @@ const Intro = () => {
 
             <WhatText>
               <p>Developer</p>
+              <p>UI Designer</p>
             </WhatText>
             <MainButtons>
               <ButtonLink1
@@ -64,7 +65,7 @@ const Intro = () => {
             x: [-250, 100, 250, -100, 220, -150, -300, -250],
             rotate: 180,
           }}
-          transition={{ repeat: Infinity, duration: 30 }}
+          transition={{ repeat: Infinity, duration: 60 }}
         >
           <img src={blob} alt='' />
         </motion.div>
