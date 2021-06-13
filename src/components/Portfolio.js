@@ -2,7 +2,7 @@ import React from "react";
 
 import styled from "styled-components";
 import project3 from "../assets/keyboardUI.PNG";
-import project2 from "../assets/blog-projects.png";
+// import project2 from "../assets/blog-projects.png";
 import project1 from "../assets/studios.PNG";
 // import project4 from "../assets/chooseOne.PNG";
 import project5 from "../assets/RealNews.PNG";
@@ -32,16 +32,16 @@ const Portfolio = () => {
               Description='React - HTML/CSS - Javascript - Material UI - Jest'
               Link='https://ikanotes.netlify.app'
               Image={project6}
-              LeftRight={true}
+              LeftRight={false}
             />
 
-            <PortfolioProject
+            {/* <PortfolioProject
               Title='Blog'
               Description='Hugo - Markdown'
               Link='https://hoangh.netlify.app/'
               Image={project2}
               LeftRight={false}
-            />
+            /> */}
 
             <PortfolioProject
               Title='True Story'
