@@ -10,7 +10,7 @@ const Contact = ({ theme }) => {
             <p>Contact</p>
           </Title>
 
-          {/* <Email> hoanghh9623@gmail.com </Email> */}
+          <Email> hoang_hh@outlook.com </Email>
 
           <Icons>
             <a
@@ -56,11 +56,11 @@ const Title = styled.div`
   }
 `;
 
-// const Email = styled.p`
-//   font-weight: 500;
-//   font-size: 20px;
-//   font-family: "";
-// `;
+const Email = styled.p`
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "";
+`;
 
 const Icons = styled.div`
   display: flex;
