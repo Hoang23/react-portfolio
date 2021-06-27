@@ -96,11 +96,9 @@ const Project = styled.div`
   height: 100%;
   padding-bottom: 3rem;
 
-
   @media (max-width: 768px) {
     flex-wrap: wrap;
   }
-
 `;
 const Image = styled.div`
   max-width: 50%;
@@ -139,7 +137,7 @@ const Summary = styled.div`
   h6 {
     font-size: 20px;
     color: #7ca29c;
-    border-bottom: 2px solid #a58d94;
+    border-bottom: 2px solid #fa976e;
     border-bottom-width: 5px;
     margin-top: 1rem;
   }

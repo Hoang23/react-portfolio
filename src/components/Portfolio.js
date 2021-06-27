@@ -19,13 +19,12 @@ const Portfolio = () => {
           <Title>
             <p>Portfolio</p>
           </Title>
-          <subTitle>
+          <SubTitle>
             <p>
               Webapps with interactivity and functionality such as
               authentication, CRUD operations, integration with API's etc...
             </p>
-            <br /> <br />
-          </subTitle>
+          </SubTitle>
           <Projects>
             <PortfolioProject
               Title='Notes App'
@@ -51,10 +50,9 @@ const Portfolio = () => {
               LeftRight={true}
             />
           </Projects>
-          <subTitle>
-            <p>Simple websites, designs and animation etc...</p> <br /> <br />
-            <br />
-          </subTitle>
+          <SubTitle>
+            <p>Simple websites, designs and animation etc...</p>
+          </SubTitle>
           <Projects>
             <PortfolioProject
               Title='Task Box - Signin Landing'
@@ -123,10 +121,15 @@ const Title = styled.div`
   }
 `;
 
-const subTitle = styled.div`
+const SubTitle = styled.div`
   text-align: center;
   display: flex;
   align-items: center;
+
+  p {
+    color: #fa976e;
+    margin-bottom: 2rem;
+  }
 `;
 
 const Projects = styled.div``;

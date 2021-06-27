@@ -63,11 +63,11 @@ const Text = styled.div`
     }
 
     &:nth-of-type(2) {
-      color: #7ca29c;
+      color: #fa976e;
     }
   }
 
   a {
-    color: #a58d94;
+    color: #fa976e;
   }
 `;
