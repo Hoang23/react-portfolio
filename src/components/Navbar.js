@@ -108,7 +108,7 @@ const LogoIcon = styled(LinkS)`
   flex-direction: row;
 
   span {
-    color: #fa976e;
+    color: #7ca29c;
   }
 
   img {

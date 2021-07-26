@@ -70,19 +70,21 @@ const Portfolio = () => {
               LeftRight={true}
             />
 
-            <PortfolioProject
-              Title='Website Prototype & Wireframe Design'
-              Description='Figma'
-              Link='https://drive.google.com/file/d/1HDPsA9Nfv02oPVOEX0lODsMsmOG4iJzD/view?usp=sharing'
-              Image={project3}
-              LeftRight={false}
-            />
 
             <PortfolioProject
               Title='Responsive Login Page'
               Description='A landing page was required for an internal hr system. References were used to come up with a simplistic design to match the branding of the NFP foundation'
               Link='https://foxg1-hr.netlify.app/'
               Image={project8}
+              LeftRight={false}
+            />
+
+            
+            <PortfolioProject
+              Title='Website Prototype & Wireframe Design'
+              Description='Figma'
+              Link='https://www.figma.com/file/tJZUXvU19g6KgV0OyEZXuR/Hoang-Huynh-Works?node-id=0%3A1'
+              Image={project3}
               LeftRight={true}
             />
           </Projects>
@@ -127,7 +129,7 @@ const SubTitle = styled.div`
   align-items: center;
 
   p {
-    color: #fa976e;
+    color: #7ca29c;
     margin-bottom: 2rem;
   }
 `;

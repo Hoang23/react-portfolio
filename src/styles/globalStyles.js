@@ -19,13 +19,13 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const lightTheme = {
-  body: "#F9F9F9",
+  body: "#f7fff7 ", // #fa976e // #F9F9F9 // #fffcde
   text: "#575757",
-  navbackground: "white",
+  navbackground: "#fffff7", 
 };
 
 export const darkTheme = {
   body: "#303030",
-  text: "#F9F9F9",
+  text: "#e5ffe3", // #ddeddd #F9F9F9
   navbackground: "#303030",
 };

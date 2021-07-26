@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 import Toggledark from "./Toggledark";
 
 const Sidebar = ({ toggle, isOpen, theme, toggleTheme }) => {
-  console.log(theme);
+  // console.log(theme);
   return (
     <>
       <SidebarContainer isOpen={isOpen}>
@@ -80,7 +80,7 @@ const CloseIcon = styled(FaTimes)`
   height: 20px;
   width: 20px;
 
-  color: ${(theme) => (theme === "light" ? "red" : "white")};
+  /* color: ${(theme) => (theme === "light" ? "#575757"  : "white" )}; */
   color: #575757;
 `;
 

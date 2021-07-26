@@ -137,7 +137,7 @@ const Summary = styled.div`
   h6 {
     font-size: 20px;
     color: #7ca29c;
-    border-bottom: 2px solid #fa976e;
+    border-bottom: 2px solid #7ca29c;
     border-bottom-width: 5px;
     margin-top: 1rem;
   }

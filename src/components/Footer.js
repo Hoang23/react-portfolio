@@ -35,6 +35,6 @@ const LogoIcon = styled(LinkS)`
   cursor: pointer;
 
   span {
-    color: #fa976e;
+    color: #7ca29c;
   }
 `;
